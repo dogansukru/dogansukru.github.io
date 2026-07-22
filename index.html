@@ -1,141 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>DGN Games</title>
 
 <style>
-body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-    background:#f5f7fb;
-    color:#222;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
+body{
+
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+background:#f4f7fb;
+color:#222;
+
 }
 
 header{
-    text-align:center;
-    margin-bottom:50px;
+
+background:linear-gradient(135deg,#0F62FE,#4F8CFF);
+color:white;
+padding:80px 20px;
+text-align:center;
+
 }
 
-h1{
-    font-size:48px;
-    margin-bottom:10px;
+header h1{
+
+font-size:54px;
+margin-bottom:15px;
+
 }
 
-.subtitle{
-    font-size:20px;
-    color:#666;
+header p{
+
+font-size:22px;
+opacity:.95;
+
 }
 
-.card{
-    background:white;
-    padding:35px;
-    border-radius:18px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+.container{
+
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+
 }
 
-h2{
-    margin-top:0;
+.section-title{
+
+font-size:34px;
+margin-bottom:35px;
+text-align:center;
+
 }
 
-ul{
-    line-height:1.9;
+.game-card{
+
+background:white;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.25s;
+max-width:850px;
+margin:auto;
+
+}
+
+.game-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.game-banner{
+
+height:220px;
+background:linear-gradient(135deg,#007AFF,#34C8FF);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:80px;
+color:white;
+
+}
+
+.game-content{
+
+padding:35px;
+
+}
+
+.game-content h2{
+
+font-size:34px;
+margin-bottom:15px;
+
+}
+
+.game-content p{
+
+font-size:18px;
+line-height:1.8;
+color:#555;
+
+}
+
+.features{
+
+margin-top:25px;
+margin-left:20px;
+line-height:2;
+
+}
+
+.buttons{
+
+margin-top:35px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+
 }
 
 .button{
-    display:inline-block;
-    margin-top:25px;
-    padding:15px 28px;
-    background:#007AFF;
-    color:white;
-    text-decoration:none;
-    border-radius:12px;
-    font-weight:600;
+
+display:inline-block;
+padding:15px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+transition:.25s;
+
 }
 
-.button:hover{
-    background:#0066d6;
+.primary{
+
+background:#007AFF;
+color:white;
+
+}
+
+.primary:hover{
+
+background:#0063d4;
+
+}
+
+.secondary{
+
+background:#eceff4;
+color:#222;
+
+}
+
+.secondary:hover{
+
+background:#dde3eb;
+
 }
 
 .contact{
-    margin-top:60px;
-    text-align:center;
+
+margin-top:80px;
+text-align:center;
+
+}
+
+.contact h2{
+
+font-size:32px;
+margin-bottom:15px;
+
+}
+
+.contact p{
+
+font-size:18px;
+line-height:1.8;
+
 }
 
 footer{
-    margin-top:50px;
-    color:#888;
-    text-align:center;
-    font-size:14px;
-}
 
-@media(max-width:700px){
-
-h1{
-    font-size:36px;
-}
-
-.subtitle{
-    font-size:18px;
-}
-
-.card{
-    padding:25px;
-}
+margin-top:80px;
+padding:35px;
+background:#111827;
+color:white;
+text-align:center;
 
 }
+
+@media(max-width:768px){
+
+header{
+
+padding:60px 20px;
+
+}
+
+header h1{
+
+font-size:40px;
+
+}
+
+header p{
+
+font-size:18px;
+
+}
+
+.game-banner{
+
+height:170px;
+font-size:60px;
+
+}
+
+.game-content h2{
+
+font-size:28px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.button{
+
+text-align:center;
+
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="container">
-
 <header>
 
 <h1>DGN Games</h1>
 
-<p class="subtitle">
+<p>
 Creating simple, enjoyable and challenging mobile games.
 </p>
 
 </header>
 
-<div class="card">
+<div class="container">
 
-<h2>🎮 Ripple Rush</h2>
+<h2 class="section-title">
+Our Games
+</h2>
+
+<div class="game-card">
+
+<div class="game-banner">
+
+🎮
+
+</div>
+
+<div class="game-content">
+
+<h2>Ripple Rush</h2>
 
 <p>
-<strong>Ripple Rush is now available on the App Store!</strong>
-</p>
 
-<p>
+Ripple Rush is now available on the App Store.
+
 Test your reflexes and push your limits in a fast-paced adventure where every second counts.
+
 </p>
 
-<h3>Features</h3>
+<ul class="features">
 
-<ul>
-<li>Fast-paced gameplay focused on reflexes and time-based challenges</li>
-<li>Three time-based difficulty levels: Easy, Medium and Hard</li>
-<li>Balanced progressive difficulty system</li>
-<li>Dynamic targets and obstacles at higher levels</li>
-<li>Separate best level records for each difficulty</li>
-<li>User interface optimized for both iPhone and iPad</li>
-<li>Carefully controlled ad frequency for a better gameplay experience</li>
+<li>Fast-paced reflex gameplay</li>
+
+<li>Three difficulty levels</li>
+
+<li>Balanced progressive level system</li>
+
+<li>Dynamic targets and obstacles</li>
+
+<li>Separate best level records</li>
+
+<li>Optimized for iPhone & iPad</li>
+
+<li>Reduced and controlled ad frequency</li>
+
 </ul>
 
-<a class="button" href="https://apps.apple.com/tr/app/ripple-rush-game/id6778551981?l=tr">
-Download on the App Store
+<div class="buttons">
+
+<a class="button primary"
+href="games/ripple-rush/">
+
+View Game
+
 </a>
+
+<a class="button secondary"
+href="https://apps.apple.com/">
+
+Download
+
+</a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -144,12 +333,20 @@ Download on the App Store
 <h2>Contact</h2>
 
 <p>
-For support or business inquiries:
+
+For support or business inquiries
+
 </p>
 
+<br>
+
 <p>
-📧 <strong>dogansukru@icloud.com</strong>
+
+📧 YOUR_EMAIL_ADDRESS
+
 </p>
+
+</div>
 
 </div>
 
@@ -159,7 +356,6 @@ For support or business inquiries:
 
 </footer>
 
-</div>
-
 </body>
+
 </html>
